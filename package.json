@@ -1,0 +1,40 @@
+{
+  "name": "webpack-library",
+  "version": "1.0.0",
+  "description": "webpack library.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage": "https://github.com/robertoachar/webpack-library#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "node src/index.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/webpack-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/webpack-library/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "23.1.1",
+    "coveralls": "3.0.1",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest": "23.1.0",
+    "prettier": "1.13.5"
+  },
+  "license": "MIT"
+}
