@@ -1,12 +1,9 @@
 const lib = require('../src');
 
 describe('TESTS', () => {
-  test('Basic test', (done) => {
-    lib.hello((err, message) => {
-      expect(err).toBeNull();
-      expect(message).toBe('It works!');
+  test('Basic test', () => {
+    const result = lib.hello();
 
-      done();
-    });
+    expect(result).toBe('It works!');
   });
 });
